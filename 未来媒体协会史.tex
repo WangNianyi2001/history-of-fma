@@ -1,0 +1,332 @@
+\documentclass{paper}
+\usepackage{fontspec}
+\usepackage[slantfont, boldfont]{xeCJK}
+	\setmainfont{Noto Serif CJK SC}
+	\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{geometry}
+	\geometry{left=.5in,right=.5in,top=1in,bottom=1in}
+\usepackage{titling}
+\usepackage{enumitem}
+	\setlist{noitemsep,nosep}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[symbol=$\dagger$,numberlinked=false]{footnotebackref}
+\usepackage{tabularx,array,longtable,multirow,tablefootnote,makecell}
+	\newcommand{\tablefootnoteref}[1]{\textsuperscript{\ref{#1}}}
+\usepackage{float,parskip}
+\usepackage{amsmath,amssymb}
+\usepackage{xparse,pgffor}
+\usepackage{graphicx,wrapfig,subfigure}
+	\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
+\usepackage{tikz}
+	\usetikzlibrary{calc}
+\usepackage{lipsum}
+
+\newcommand{\name}[1]{{\em #1}}
+\renewcommand{\thead}[1]{\textbf{ #1}}
+
+\begin{document}
+
+\setlength{\droptitle}{-.5in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\title{未来媒体协会史}
+\author{王念一}
+\maketitle
+
+\tableofcontents
+
+\begin{section}{表记}
+	\begin{subsection}{初代目：2016.9--2017.6}
+		2016年9月，\name{张昊阳}在中国传媒大学创立社团虚拟现实协会，简称\name{广院VR社}、\name{CUCVR}。社团的主要活动内容为虚拟现实技术相关的研究与应用。指导老师是信通学院的\name{赵宇}。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{人员} \\ \hline
+				社长 & 张昊阳 \\ \hline
+				策划部 & ？ \\ \hline
+				文宣部 & ？ \\ \hline
+				技术部 & ？ \\ \hline
+				事务部 & ？ \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{活动}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{事项} \\ \hline
+
+				\multirow{1}{*}{八月}
+				& 25日 & \href{https://mp.weixin.qq.com/s/uu4QynWSQL0nTetRwK7Nng}{参加搜狐年度VR大会} \\ \hline
+
+				\multirow{3}{*}{九月}
+				& 1日 & \href{https://mp.weixin.qq.com/s/WgZMbZU0vUXvtqOGVd6B_A}{采访《三国杀》制作人兼CUC校友黄恺} \\
+				& 17--21日 & \href{https://mp.weixin.qq.com/s/sXsqLPwm6NPsbOR82Dsdlw}{参观大厂影视基地} \\
+				& 28日 & 参加以色列Walking App VR引擎测试赛，取得金奖 \\ \hline
+
+				\multirow{2}{*}{十月}
+				& 23日 & \href{https://mp.weixin.qq.com/s/x85rf1f-2Rol9m0SSdo-NQ}{百团大战} \\
+				& 24日 & 于广博\href{https://mp.weixin.qq.com/s/6gHHMyfORHuOgh5wh0gxmQ}{召开迎新会} \\ \hline
+
+				\multirow{2}{*}{十一月}
+				& 2日 & \href{https://mp.weixin.qq.com/s/zFRpFf-90lzlfQhYlOh0Yw}{于终极科技慈云寺店访问体验} \\
+				& 20日 & \href{https://mp.weixin.qq.com/s/WqN5Na-M-45fKG6UV-pSZA}{于TVR访问交流} \\ \hline
+
+				\multirow{2}{*}{十二月}
+				& 7日 & \href{https://mp.weixin.qq.com/s/43pTM3BWA1HeuyP2wj4zgA}{于北京开心互娱信息技术有限公司访问学习} \\
+				& 16日 & 加入中关村品牌VR联盟 \\ \hline
+
+				\multirow{3}{*}{三月}
+				& & \href{https://mp.weixin.qq.com/s/eRU1DgRMs7Z62imheJksYA}{专访麦课教育CEO刘义光} \\
+				& 24日 & \href{https://mp.weixin.qq.com/s/7OYzm3obpub49CM9at3wcw}{承办第一次中关村品牌VR联盟系列沙龙活动} \\
+				& 28日 & \href{https://mp.weixin.qq.com/s/qWsWQ3jKt6SSnXNCPYzbkA}{潍坊市国家高新技术产业开发区领导来访参观实验室} \\ \hline
+
+				\multirow{1}{*}{四月}
+				& 8日 & \href{https://mp.weixin.qq.com/s/fcz9Pao__yQIYgcQhOw7nw}{应邀访问完美世界总部} \\ \hline
+
+				\multirow{1}{*}{五月}
+				& & \href{https://mp.weixin.qq.com/s/PNQWssw45hEL54-5yCKsRg}{协办第三届VR视频大赛} \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{临时约大总统：2017.7--2017.8}
+		2017年7月，张昊阳休学创办\name{北京触梦文化科技有限公司}，将社团交给\name{李沛宸}临时打理。
+	\end{subsection}
+	\begin{subsection}{二代目：2017.9--2018.6}
+		2017年9月，\name{张天鸿}接任社长，\name{邓雨晨}任副社长。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{人员} \\ \hline
+				社长 & 张天鸿、邓雨晨 \\ \hline
+				策划部 & 王铎霖 \\ \hline
+				技术部 & 余吉鑫 \\ \hline
+				网络部 & 林淑琪 \\ \hline
+				外联部 & 袁倩 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{活动}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{事项} \\ \hline
+				\multirow{1}{*}{十月} & 27日 & \href{https://mp.weixin.qq.com/s/oqxBqJkMci10MyT-Lh4Nbw}{百团大战}、迎新宣讲 \\ \hline
+				\multirow{1}{*}{十一月} & 25日 & 南操\href{https://mp.weixin.qq.com/s/dy4ZUS6qMgGBnK28GFHBDA}{全景拍摄教学} \\ \hline
+				\multirow{1}{*}{十二月} & 23日 & 主楼804，\href{https://mp.weixin.qq.com/s/1NMEYBLSlib-6M-JBOz28g}{UE实训课} \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{三代目：2018.7--2019.6}
+		2018年7月，\name{汪飞虎}接任社长，不设副社长。
+
+		同学年，张昊阳负责的\name{先进交互与虚拟现实实验室}成立，地点在国重1502；实验室
+		对社团活动开放。
+
+		此间活动无考。
+	\end{subsection}
+	\begin{subsection}{复辟代目：2019.7‒2020.6}
+		2019年，张昊阳创业失败，回校复学。
+
+		暑假，有老师前来“参观”1502实验室，后设法抢占；社团失去活动场地。
+
+		同年，虚拟现实协会改名\name{未来媒体协会}（\name{Future Media Association}），简称\name{FMA}；社团的活动内容转为数字媒体相关领域。
+
+		7月，张昊阳接任社长，\name{沈琰周}任副社长。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{主理} & \thead{干事} \\ \hline
+				社长 & 张昊阳、沈琰周 & - \\ \hline
+				技术部 & 沈琰周 & 任东伟、梁诗惠、崔馨月、曾谢成、张仔浩 \\ \hline
+				美术部 & 周子腾 & 安晴、陈奕帆、杜心雨 \\ \hline
+				音乐部 & 王思萌 & 刘子清、曹弘沐、王一枝 \\ \hline
+				动画部 & 赵一桥 & 戢宇翔、王森、王承、安雪颖 \\ \hline
+				宣传部 & 余连浩 &  陈柏宇、许佳欣、程尹宣 \\ \hline
+				项目部 & 王韬涵 & 詹玖玲、王雨晴、张妤萌 \\ \hline
+				演艺部\tablefootnote{
+					后新建。
+				} & 王一枝 & - \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\multicolumn{4}{|c|}{\thead{课程}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{地点} & \thead{事项} \\ \hline
+				\multirow{3}{*}{九月}
+				& 24日 & 1502 & \href{https://mp.weixin.qq.com/s/Z-UWydG437TscaJQ_BRM0w}{技术部第一次课程}，社长女装教学UE \\
+				& & & 发布了\href{https://mp.weixin.qq.com/s/vxlUYgRQCxnRmkGPHX58Yg}{一箩筐课程预告} \\
+				& 27日 & & 音乐部与制音工厂合作：虚拟人声与编曲扒谱实战课 \\ \hline
+				\multirow{2}{*}{每周}
+				& 周四 & 1502 & 动画部：Maya 建模 \\
+				& 周二、六 & 1052 & 技术部：UE 基础与游戏设计 \\ \hline
+				\multirow{1}{*}{十月}
+				& 19日 & & 美术部第一次课程 \\ \hline
+				\multirow{5}{*}{十一月}
+				& 17日 & & 演艺部第一次课程：《动画表演与角色扮演创作》 \\
+				& 23日 & & 美术部课程 \\
+				& 24日 & & 演艺部第二次课程 \\
+				& 26日 & & 动画部：《Nuke视频合成与Substance模型上色》 \\
+				& 29日 & & 音乐部与制音工厂合作：编曲系列课程 \\ \hline
+				\multirow{3}{*}{十二月}
+				& 1日 & 动捕实验室 & 演艺部授课 \\
+				& 20日 & & 关于《天气之子》的后期制作技术与流程分享讲座 \\
+				& 24日 & & UE插件Speed Tree应用课程 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{四代目：2020.7‒2021.6}
+		2020年7月，\name{王一枝}接任社长，沈琰周留任副社长。赵宇提供了主楼四层的实验室，社团活动遂转于是。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{正} & \thead{副} \\ \hline
+				社长 & 王一枝 & 沈琰周 \\ \hline
+				技术部 & 张素哲 & 倪豪、彭高杲、曾谢成 \\ \hline
+				动画部\tablefootnote{
+					后分为平面、三维两支，平面与美术部并为艺术部、三维归入技术部。
+				} & 王森 & 田济舟 \\ \hline
+				美术部 & 陈柏宇 & 田济舟 \\ \hline
+				宣传部 & 许佳欣 & 程尹宣 \\ \hline
+				策划部 & 邱耿煜 & （九叶）、梁诗惠 \\ \hline
+				音乐部 & 刘子清 & 贺英杰 \\ \hline
+				演艺部 & 王一枝 & 刘润瀛 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{活动}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{事项} \\ \hline
+				\multirow{1}{*}{七月}
+				& 22日 & \href{https://mp.weixin.qq.com/s/doriOlMBjcmLzp_LyPiGjg}{换届大会} \\ \hline
+				\multirow{2}{*}{八月}
+				& 17日 & \href{https://mp.weixin.qq.com/s/RP2cf3NMnuHXzXBc_5agjg}{动森招新宣传} \\
+				& 24日 & \href{https://mp.weixin.qq.com/s/K5245YnggpIjih5Cm7OVFA}{H5招新问卷} \\ \hline
+				\multirow{1}{*}{十月}
+				& 24日 & \href{https://mp.weixin.qq.com/s/QwEGXh9upNdMoSPW3e6CCg}{百团大战} \\ \hline
+				\multirow{2}{*}{四月}
+				& 18日 & \href{https://mp.weixin.qq.com/s/KqglgukTYShrSyEbE7GTAw}{百团大战} \\
+				& 27日 & 联动游研社、米哈游开办\href{https://mp.weixin.qq.com/s/pcWFlPBmvPgLbYfQ7QvhRg}{Future Game Jam} \\ \hline
+				\multirow{2}{*}{五月}
+				& 5日 & 邀请新媒体人张浩淼来校开设\href{https://mp.weixin.qq.com/s/uhobWhFIrVEdW5vcGoDwFA}{新媒体讲座} \\
+				& 5日 & Future Game Jam\href{https://mp.weixin.qq.com/s/z7qSpYt5GXXSKOkJofuV5Q}{结果出炉} \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\multicolumn{4}{|c|}{\thead{课程}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{地点} & \thead{事项} \\ \hline
+				\multirow{6}{*}{十月}
+				& 11日 & 403 & 王韬涵@策划部：《认真的独立游戏策划讲解》 \\
+				& 11日 & 403 & 刘泓立@技术部：《虚幻4中预计算的辐照度估计》 \\
+				& 17日 & 48教南门 & 演艺部：《表演实践课——社彩赛博朋克》 \\
+				& 17日 & 413 & 张素哲@技术部：《技术部UE4讲解——从入门到放弃》 \\
+				& 18日 & 413 & 刘泓立@技术部《技术部UE4讲解——全民连连看》 \\
+				& 31日 & & \makecell{
+					美术部与动画部联动课程 \\
+					田济舟@美术部：天璃企划介绍 \\
+					王森@动画部：动画制作流程 \\
+					陈柏宇@动画部：Blender实用
+				} \\ \hline
+				\multirow{3}{*}{十一月}
+				& 1日 & & 策划部联动游研社长王思瑶：游戏关卡设计课程 \\
+				& 1日 & & 初代会长张昊阳：UE4课程，oeasy老师亲临交流 \\
+				& 1日 & & 音乐部与制音工厂联动：vocaloid4实用 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{五代目：2021.7--2022.6}
+		2021年7月，\name{许佳欣}接任社长，\name{程尹宣}接任副社长。
+
+		10月31日，由于前来参加万圣节活动的远超预期。起始场地一教被挤满后，管理员关停了教学楼。同学们兴致犹在，遂去操场游赏，复爆满。少顷，校保卫处出动巡逻车驱散了人群。之后社联更换了指导老师，收紧了活动审批。
+
+		春，盖疫情未开学。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{正} & \thead{副} \\ \hline
+				社长 & 许佳欣 & 程尹宣 \\ \hline
+				宣传部 & 吴雨桐 & 徐睿哲 \\ \hline
+				技术部 & 张素哲 & 孙睿 \\ \hline
+				音乐部 & 何禹衡 & 孙晨、李蔚 \\ \hline
+				艺术部 & 赵怡驰 & 周子煊 \\ \hline
+				策划部 & 韩文钦 & 徐嘉蔚 \\ \hline
+				行政部\tablefootnote{
+					后废除。
+				} & 豆利利 & - \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{活动}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{事项} \\ \hline
+				\multirow{1}{*}{七月}
+				& 25日 & \href{https://mp.weixin.qq.com/s/iErzB45wCf2sZsZ4gA1SPw}{换届大会} \\ \hline
+				\multirow{1}{*}{八月}
+				& 22日 & \href{https://mp.weixin.qq.com/s/LbFjAq4j_gmT7oDZ8IieRg}{社员招新}，上线H5问卷 \\ \hline
+				\multirow{2}{*}{九月}
+				& 8日 & 受联通赞助，\href{https://mp.weixin.qq.com/s/JUnJnFT0_WyGKbH6L9pzCA}{推销校园宽带、校园卡} \\
+				& 15日 & 举办\href{https://mp.weixin.qq.com/s/_tvGBaQTgMLaH_zO8iSEZQ}{未来集市} \\ \hline
+				\multirow{3}{*}{十月}
+				& 16日 & \href{https://mp.weixin.qq.com/s/n9nzIYrqBprmeXayvIfdTw}{百团大战} \\
+				& 27日 & 一教 214，干事招新宣讲 \\
+				& 27日 & 策划\href{https://mp.weixin.qq.com/s/8tIWxoLClfSD-pURJ34ang}{万圣节山海经主题校园探秘活动} \\ \hline
+				\multirow{2}{*}{十一月}
+				& 6日 & \href{https://mp.weixin.qq.com/s/PgdX4etbP3VLUBe5LkihHw}{FMA小镇（Minecraft）开服仪式} \\
+				& 17日 & 受鑫力量赞助，\href{https://mp.weixin.qq.com/s/BH7A5LyHfjQoPITBy7f7Qg}{推销摄影器材租赁} \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\multicolumn{4}{|c|}{\thead{课程}} \\ \hline
+				\multicolumn{2}{|c|}{\thead{日期}} & \thead{地点} & \thead{事项} \\ \hline
+				\multirow{1}{*}{十月}
+				& 24 日 & 413 & 王念一：《Git入门（一）》 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{六代目：2022.7--现在}
+		2022年7月，\name{吴雨桐}接任社长，\name{孙晨}接任副社长。
+
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\multicolumn{3}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{正} & \thead{副} \\ \hline
+				社长 & 吴雨桐 & 孙晨 \\ \hline
+				宣传部 & 邱晨宸 & 林思思 \\ \hline
+				技术部 & 吕鑫元 & 郑佳蕾 \\ \hline
+				音乐部 & 魏群弢 & 黄诗垚\tablefootnote{
+					技术组。
+				}；袁梓祎、王颖琳\tablefootnote{
+					活动组。
+				} \\ \hline
+				艺术部 & 赵怡驰 & 周子煊 \\ \hline
+				策划部 & 鲁鹄歌 & 戎晓雅 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+\end{section}
+
+\end{document}
