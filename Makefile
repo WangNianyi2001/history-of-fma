@@ -10,6 +10,7 @@ build:
 	cp -rf $(outDir) $(srcDir); \
 	cd $(srcDir); \
 	echo "\\newcommand\\system{$(system)}" > system.tex; \
+	touch includeonly.tex; \
 	mkdir $(outDir); \
 	xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$(outDir) $(srcFileName); \
 	rm system.tex; \

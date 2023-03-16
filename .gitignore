@@ -1,4 +1,5 @@
 /build/*
 !/build/*.pdf
+/src/includeonly.tex
 
 .vscode
