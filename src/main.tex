@@ -1,30 +1,10 @@
 \documentclass{paper}
-
-\usepackage{import}
-\input{system.tex}
-\usepackage{fontspec}
-\usepackage[slantfont, boldfont]{xeCJK}
-	\input{font/\system.tex}
-\usepackage{geometry}
-	\geometry{left=1in,right=1in,top=1in,bottom=1in}
-\usepackage{titling}
-\usepackage{enumitem}
-	\setlist{noitemsep,nosep}
-\usepackage[colorlinks,linkcolor=blue]{hyperref}
-\usepackage[symbol=$\dagger$,numberlinked=false]{footnotebackref}
-\usepackage{tabularx,array,longtable,multirow,tablefootnote,makecell}
-	\newcommand{\tablefootnoteref}[1]{\textsuperscript{\ref{#1}}}
-\usepackage{float,parskip}
-\usepackage{amsmath,amssymb}
-\usepackage{xparse,pgffor}
-\usepackage{graphicx,wrapfig,subfigure}
-	\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
-\usepackage{tikz}
-	\usetikzlibrary{calc}
-\usepackage{lipsum}
+\input{preamble.tex}
 
 \newcommand{\name}[1]{{\em #1}}
 \renewcommand{\thead}[1]{\textbf{ #1}}
+\newcommand{\cname}[1]{{[\em #1]}}
+\newcommand{\identity}[1]{{\small (#1)}}
 
 \begin{document}
 
@@ -309,7 +289,7 @@
 			\end{tabular}
 		\end{center}\end{table}
 	\end{subsection}
-	\begin{subsection}{六代目：2022.7--现在}
+	\begin{subsection}{六代目：2022.7--2023.?}
 		2022年7月，\name{吴雨桐}接任社长，\name{孙晨}接任副社长。
 
 		\begin{table}[H]\begin{center}
@@ -320,13 +300,35 @@
 				社长 & 吴雨桐 & 孙晨 \\ \hline
 				宣传部 & 邱晨宸 & 林思思 \\ \hline
 				技术部 & 吕鑫元 & 郑佳蕾 \\ \hline
-				音乐部 & 魏群弢 & 黄诗垚\tablefootnote{
-					技术组。
-				}；袁梓祎、王颖琳\tablefootnote{
-					活动组。
+				音乐部 & 魏群弢 & \makecell{
+					黄诗垚\identity{技术组}
+					\\
+					袁梓祎 \ 
+					王颖琳\identity{活动组}
 				} \\ \hline
 				艺术部 & 赵怡驰 & 周子煊 \\ \hline
 				策划部 & 鲁鹄歌 & 戎晓雅 \\ \hline
+			\end{tabular}
+		\end{center}\end{table}
+	\end{subsection}
+	\begin{subsection}{七代目：2023.?--?}
+		\begin{table}[H]\begin{center}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\multicolumn{4}{|c|}{\thead{领导班子}} \\ \hline
+				\thead{部门} & \thead{正} & \thead{副} & \thead{干事} \\ \hline
+				音乐部 & - & - & \makecell {
+					成可\identity{22传播} \ 
+					\cname{糖糖}\identity{22电音}
+					\\
+					赵永炜\identity{22匈语} \ 
+					郭桦菁\identity{22音编}
+					\\
+					\cname{纸雾}\identity{22广电工} \ 
+					贺雨婷\identity{21网新} \ 
+					\\
+					洪洁欣\identity{21导演}
+				} \\ \hline
 			\end{tabular}
 		\end{center}\end{table}
 	\end{subsection}
