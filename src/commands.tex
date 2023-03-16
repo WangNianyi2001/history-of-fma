@@ -1,0 +1,50 @@
+% Useful commands
+
+% Split string by separator & wrap each with command
+\newcommand{\splitMap}[3]{{
+	\def\testwords##1{%
+		\begingroup
+		\edef\@tempa{##1#1}%
+		\expandafter\endgroup
+		\expandafter\readwords\@tempa\relax
+	}
+	\def\readwords##1#1##2\relax{%
+		\doword{##1}%  #1 = substr, #2 = rest of string
+		\begingroup
+		\ifx\relax##2\relax  % is #2 empty?
+			\def\next{\endgroup\endtestwords}% your own end-macro if required
+		\else
+			\def\next{\endgroup\readwords##2\relax}%
+		\fi
+		\next
+	}
+	\def\doword##1{#2{##1}}
+	\def\endtestwords{}
+
+	\testwords{#3}
+}}
+\newcommand{\makeRef}[1]{\ref{#1}#1}
+
+% Inline styles
+
+\newcommand{\name}[1]{{\em #1}}
+\renewcommand{\thead}[1]{\textbf{ #1}}
+\newcommand{\cname}[1]{{[\em #1]}}
+\newcommand{\identity}[1]{{\small (#1)}}
+
+% Block environments
+
+% Header is automatically referred, splitted by separator.
+% Usage: \begin{referred}[separator]{env-name}{header}
+\newenvironment{referred}[3][、]{
+	\splitMap{#3}{\makeRef}{#1}
+	\begin{#2}{#3}
+}{
+	\end{#2}
+}
+
+\newenvironment{peoplesection}[1]{
+	\begin{referred}{subsection}{#1}
+}{
+	\end{referred}
+}
