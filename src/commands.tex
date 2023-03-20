@@ -24,15 +24,6 @@
 
 % Block environments
 
-% Header is automatically autoLabelled, splitted by separator.
-% Usage: \begin{autoLabelled}[separator]{env-name}{header}
-\newenvironment{autoLabelled}[3][、]{
-	\splitMap{#1}{\label}{#3}
-	\begin{#2}{#3}
-}{
-	\end{#2}
-}
-
 % Usage: [name][start-date][end-date]
 \newenvironment{historySection}[3]{
 	\label{#1}
@@ -42,13 +33,16 @@
 }
 
 \newenvironment{storySection}[2][、]{
-	\begin{autoLabelled}[#1]{subsection}{#2}
+	\splitMap{#1}{\label}{#2}
+	\begin{subsection}{#2}
 }{
 	\end{autoLabelled}
 }
 
 \newenvironment{personSection}[2][、]{
-	\begin{autoLabelled}[#1]{subsection}{#2}
+	\newcommand{\labelPerson}[1]{\label{#1}} % TODO
+	\splitMap{#1}{\labelPerson}{#2}
+	\begin{subsection}{#2}
 }{
-	\end{autoLabelled}
+	\end{subsection}
 }
