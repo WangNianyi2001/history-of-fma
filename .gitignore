@@ -1,4 +1,9 @@
-/build/*
-!/build/*.pdf
+# Project
+
+/build
+
+# IDEs
+
+## VS Code
 
 .vscode
