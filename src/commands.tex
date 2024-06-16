@@ -10,9 +10,9 @@
 
 % Importers
 
-\newcommand{\importHistory}[1]{\subimport{histories}{#1.tex}}
-\newcommand{\importStory}[1]{\subimport{stories}{#1.tex}}
-\newcommand{\importPerson}[1]{\subimport{people}{#1.tex}}
+\newcommand{\importHistory}[1]{\subimport{src/histories}{#1.tex}}
+\newcommand{\importStory}[1]{\subimport{src/stories}{#1.tex}}
+\newcommand{\importPerson}[1]{\subimport{src/people}{#1.tex}}
 
 % Inline styles
 
@@ -27,14 +27,14 @@
 % Usage: [name][start-date][end-date]
 \newenvironment{historySection}[3]{
 	\label{#1}
-	\begin{subsection}{#1：#2--#3}
+	\begin{section}{#1：#2--#3}
 }{
-	\end{subsection}
+	\end{section}
 }
 
 \newenvironment{storySection}[2][、]{
 	\splitMap{#1}{\label}{#2}
-	\begin{subsection}{#2}
+	\begin{section}{#2}
 }{
 	\end{autoLabelled}
 }
@@ -42,7 +42,7 @@
 \newenvironment{personSection}[2][、]{
 	\newcommand{\labelPerson}[1]{\label{#1}} % TODO
 	\splitMap{#1}{\labelPerson}{#2}
-	\begin{subsection}{#2}
+	\begin{section}{#2}
 }{
-	\end{subsection}
+	\end{section}
 }
