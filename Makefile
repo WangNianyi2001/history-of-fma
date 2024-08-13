@@ -1,11 +1,12 @@
-inputFile=main.tex
-outFile=main.pdf
+inputFile=document.tex
+outFile=document.pdf
 outDir=build
 
 entry:
 	latexmk \
 		-interaction=nonstopmode -f \
-		-pdfxe\
+		-pdfxe \
+		-quiet \
 		-outdir=$(outDir) \
 		$(inputFile)
 
