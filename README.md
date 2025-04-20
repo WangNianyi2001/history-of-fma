@@ -2,8 +2,11 @@
 
 本项目记录中国传媒大学未来媒体协会的变迁、人物、故事。
 
-- [在线阅读](https://github.com/WangNianyi2001/history-of-fma/blob/master/build/main.pdf)
-- [下载链接](https://github.com/WangNianyi2001/history-of-fma/releases)
+- ~~在线阅读~~
+
+	> 由于每次更新都追踪 PDF 太浪费空间了，改成手动发布了。
+
+- [历史发布版本](https://github.com/WangNianyi2001/history-of-fma/releases)
 
 ## 如何贡献
 
