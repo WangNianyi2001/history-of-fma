@@ -10,4 +10,4 @@
 
 ## 如何贡献
 
-在本地安装 XeLaTeX 和 CTeX，编辑 `src/` 下的源码，在根目录执行 `make build` 即可。
+在本地安装 [Typst](https://github.com/typst/typst/releases/)，编辑 `src/` 下的源码，在根目录执行 `make build` 即可。

@@ -1,14 +1,10 @@
-inputFile=document.tex
+srcDir=src/
+srcFile=document.typ
+
+outDir=build/
 outFile=document.pdf
-outDir=build
 
-entry:
-	latexmk \
-		-interaction=nonstopmode -f \
-		-pdfxe \
-		-quiet \
-		-outdir=$(outDir) \
-		$(inputFile)
+build: $(outDir)$(outFile)
 
-clean:
-	cd $(outDir) && latexmk -c $(outFile)
+$(outDir)$(outFile): $(shell find $(srcDir) -name '*.typ' | sort)
+	typst compile $(srcDir)$(srcFile) $(outDir)$(outFile);
