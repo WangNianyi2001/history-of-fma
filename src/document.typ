@@ -8,13 +8,16 @@
 #coverpage(title: title, author: author)
 #pagebreak()
 
-#include "subdocuments/preface.typ"
+#outline()
 #pagebreak()
 
-#include "subdocuments/reigns.typ"
+#include "subdocuments/前言.typ"
 #pagebreak()
 
-#include "subdocuments/stories.typ"
+#include "subdocuments/历志.typ"
 #pagebreak()
 
-#include "subdocuments/people.typ"
+#include "subdocuments/杂史.typ"
+#pagebreak()
+
+#include "subdocuments/列传.typ"
