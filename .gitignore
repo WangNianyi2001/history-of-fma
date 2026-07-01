@@ -1,7 +1,8 @@
 # Project
 
-/build
+/src/**/*.pdf
+/private
 
 # VS Code
 
-.vscode
+/.vscode
