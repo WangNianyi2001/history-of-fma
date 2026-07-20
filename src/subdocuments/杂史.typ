@@ -7,3 +7,4 @@
 #include "杂史/游研社关停.typ"
 #include "杂史/董跃夺实验室.typ"
 #include "杂史/郎琅谋逆.typ"
+#include "杂史/朱程险遭爆破.typ"

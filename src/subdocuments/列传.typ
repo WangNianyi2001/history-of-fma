@@ -10,3 +10,4 @@
 #include "列传/王一枝.typ"
 #include "列传/许佳欣.typ"
 #include "列传/程尹宣.typ"
+#include "列传/朱程.typ"

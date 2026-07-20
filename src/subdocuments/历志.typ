@@ -11,3 +11,6 @@
 #include "历志/五代目.typ"
 #include "历志/六代目.typ"
 #include "历志/七代目.typ"
+#include "历志/八代目.typ"
+#include "历志/九代目.typ"
+#include "历志/十代目.typ"
